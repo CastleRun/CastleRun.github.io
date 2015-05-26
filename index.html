@@ -3,21 +3,35 @@
   <head>
     <style type="text/css">
       body{
-        font-family:"Lucida Console", Monaco, monospace;
-      }
-      img{
-        display:inline;
+        font-family:Consolas, monaco, monospace;
       }
       #left{
-        display:block;
+        float:left;
+        line-height: 40px;
+        width: 200px;
+        height: 500px;
+        background-color: #222200;
+        color:#ffffff;
+      }
+      #right{
+        float:left;
+        width: 700px;
+        height: 500px;
+        background-color: #444400;
+        color: #ffffff;
       }
     </style>
   </head>
   <body>
     <h1>Welcome to Castle Run</h1>
-    <h2>Just testing some layouts</h2>
-    <img class="layout1" id="left" src="Capture.png" width=786 />
-    <img class="layout1" src="Capture.png" />
-    <img class="layout1" src="Capture.png" />
+    <div id="left" width=100px>
+      <p>Hi</p>
+      <p>Derp</p>
+      <p>Yay</p>
+    </div>
+    <div id="right" width=100px>
+      <h1>Hi</h1>
+      <p>Hi is a natural greeting.</p>
+    </div>
   </body>
 </html>
