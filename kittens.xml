@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<litter>
+    <kitten id="1">
+        <ownername>Place Name Here</ownername>
+        <accesscode>7483</accesscode>
+        <address>Place Address Here</address>
+        <collar>N/A</collar>
+    </kitten>
+    <kitten id="2">
+        <ownername>Place Name Here</ownername>
+        <accesscode>4730</accesscode>
+        <address>Place Address Here</address>
+        <collar>N/A</collar>
+    </kitten>
+    <kitten id="3">
+        <ownername>Place Name Here</ownername>
+        <accesscode>4830</accesscode>
+        <address>Place Address Here</address>
+        <collar>N/A</collar>
+    </kitten>
+    <kitten id="4">
+        <ownername>Place Name Here</ownername>
+        <accesscode>4895</accesscode>
+        <address>Place Address Here</address>
+        <collar>N/A</collar>
+    </kitten>
+    <kitten id="5">
+        <ownername>Place Name Here</ownername>
+        <accesscode>4637</accesscode>
+        <address>Place Address Here</address>
+        <collar>N/A</collar>
+    </kitten>
+</litter>
