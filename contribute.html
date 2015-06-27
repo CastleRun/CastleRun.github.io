@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function loadrepos(){
+        if (window.XMLHttpRequest){
+          jsonl=XMLHttpRequest();
+        }else{
+          jsonl=new ActiveXObject("Microsoft.XMLHttp");
+        }
+        json.onreadystatechange=function(){
+          if (jsonl.readyState==4 && xmlhttp.status=200){
+            printrepos(jsonl.responseText);
+          }
+        }
+        jsonl.open("GET","repos.json",true);
+        jsonl.send();
+      }
+      function printrepos(text){
+        var node;
+        var text;
+        repos=JSON.parse(text);
+        for(var i=0;i<repos.repos.length;i++){
+          node=document.createElement("LI");
+          text=document.createElement("<div class='repo'><h2>"+repos.repos[i].name+"</h2><p>"+repos.repos[i].desc+"</p><a href='"+repos.repos[i].url+"'>Contribute</a>");
+          node.appendChild(text);
+          document.getElementById("repos").appendChild(node)
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Contribute to my repos!</h1>
+    <h2>My Repos</h2>
+    <ul id="repos">
+      
+    </ul>
+    <p>Those who contribute will be credited for their contributions.</p>
+  </body>
+</html>
