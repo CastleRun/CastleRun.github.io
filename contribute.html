@@ -9,7 +9,7 @@
           jsonl=new ActiveXObject("Microsoft.XMLHttp");
         }
         json.onreadystatechange=function(){
-          if (jsonl.readyState==4 && xmlhttp.status=200){
+          if (jsonl.readyState==4 && xmlhttp.status==200){
             printrepos(jsonl.responseText);
           }
         }
