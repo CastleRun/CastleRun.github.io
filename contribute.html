@@ -22,7 +22,7 @@
         repos=JSON.parse(text);
         for(var i=0;i<repos.repos.length;i++){
           node=document.createElement("LI");
-          text=document.createElement("<div class='repo'><h2>"+repos.repos[i].name+"</h2><p>"+repos.repos[i].desc+"</p><a href='"+repos.repos[i].url+"'>Contribute</a>");
+          text=document.createTextNode("<div class='repo'><h2>"+repos.repos[i].name+"</h2><p>"+repos.repos[i].desc+"</p><a href='"+repos.repos[i].url+"'>Contribute</a>");
           node.appendChild(text);
           document.getElementById("repos").appendChild(node)
         }
