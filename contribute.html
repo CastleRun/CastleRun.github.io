@@ -22,9 +22,22 @@
         repos=JSON.parse(text);
         for(var i=0;i<repos.repos.length;i++){
           node=document.createElement("LI");
-          text=document.createTextNode("<div class='repo'><h2>"+repos.repos[i].name+"</h2><p>"+repos.repos[i].desc+"</p><a href='"+repos.repos[i].url+"'>Contribute</a>");
+          text=document.createTextNode("");
           node.appendChild(text);
-          document.getElementById("repos").appendChild(node)
+          document.getElementById("repos").appendChild(node);
+          nn=document.createElement("H2");
+          nt=document.createTextNode(repos.repos[i].name);
+          nn.appendChild(nt);
+          document.getElementById("repos").children[i].appendChild(nn);
+          ln=document.createElement("A");
+          lt=document.createTextNode("Click Here");
+          ln.appendChild(lt);
+          document.getElementById("repos").children[i].appendChild(ln);
+          document.getElementById("repos").children[i].children[1].href=repos.repos[i].url;
+          dn=document.createElement("P");
+          dt=document.createTextNode(repos.repos[i].desc);
+          dn.appendChild(dt);
+          document.getElementById("repos").children[i].appendChild(dn);
         }
       }
     </script>
