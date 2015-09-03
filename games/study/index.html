@@ -3,8 +3,9 @@
   <head>
     <script>
       function addTime(currentDate,mins){
-        
+        return new Date(currentDate.getTime+(mins*60000));
       }
+      var questions=[["1+1=2", "2+2=5", "12+10=112", "This game is in its alpha stage."],[true, false, false, true]]
     </script>
   </head>
 <body>
