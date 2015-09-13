@@ -5,14 +5,19 @@
       function addTime(currentDate,mins){
         return new Date(currentDate.getTime+(mins*60000));
       }
-      var questions=[["1+1=2", "2+2=5", "12+10=112", "This game is in its alpha stage."],[true, false, false, true]]
+      var questions=[["1+1=2", "2+2=5", "12+10=112", "This game is in its alpha stage."],[true, false, false, true]];
+      var playing=false;
+      var response=undefined;
+      function play(){
+        
+      }
     </script>
   </head>
 <body>
   <h1>Study Game</h1>
   <h2 id="phase"></h2>
   <h3 id="q"></h3>
-  <button onclick="action()">Play</button>
+  <button onclick="play()">Play</button>
   <footer><font size="6px">Alpha Version</font></footer>
 </body>
 </html>
