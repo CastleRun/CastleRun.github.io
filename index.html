@@ -13,14 +13,14 @@
         line-height: 40px;
         width: 200px;
         height: 500px;
-        background-color: #222200;
-        color:#ffffff;
+        background-color: #ffffff;
+        color:#000000;
       }
       #right{
         float:left;
         width: 700px;
         height: 500px;
-        background-color: #444400;
+        background-color: #ffffff;
       }
     </style>
   </head>
@@ -31,5 +31,13 @@
       <a href="javascript:document.getElementById('right').src='contribute.html'">Contribute</a>
     </div>
     <iframe id="right" src="about:blank"></iframe>
+    <script>
+      for(;;){
+        //This code is not supported in versions of Internet Explorer before IE9.
+        document.getElementbyId("left").style.height=window.innerHeight;
+        document.getElementbyId("right").style.height=window.innerHeight;
+        document.getElementbyId("right").style.height=window.innerWidth-200;
+      }
+    </script>
   </body>
 </html>
