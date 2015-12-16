@@ -6,11 +6,9 @@
   <body>
     <canvas id="3d" width="200" height="100">Please use a newer browser</canvas>
     <script>
-      display();
-      function display(){
-        var ctx=load("3d");
-        line(ctx,0,0,1,12,12,12);
-      }
+      var ctx=load("3d");
+      line(ctx,0,0,1,12,12,12);
+      alert("Displayed");
     </script>
   </body>
 </html>
