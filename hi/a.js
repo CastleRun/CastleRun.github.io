@@ -1,5 +1,5 @@
 function load(id){
-  var c = document.getElementById(id,loadAxes);
+  var c = document.getElementById(id);
   var ctx = c.getContext("2d");
   return ctx;
 }
