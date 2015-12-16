@@ -2,14 +2,15 @@
 <html>
   <head>
     <script src="hi/a.js"></script>
+  </head>
+  <body>
+    <canvas id="3d" width="200" height="100">Please use a newer browser</canvas>
     <script>
+      display();
       function display(){
         var ctx=load("3d");
         line(ctx,0,0,1,12,12,12);
       }
     </script>
-  </head>
-  <body onload="display()">
-    <canvas id="3d" width="200" height="100">Please use a newer browser</canvas>
   </body>
 </html>
