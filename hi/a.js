@@ -1,16 +1,15 @@
-function load(id){
+function Display(id){
   var c = document.getElementById(id);
-  var ctx = c.getContext("2d");
-  return ctx;
-}
-function clear(id,ctx){
-  c=document.getElementById(id);
-  ctx.fillStyle="#FFFFFF";
-  ctx.fillRect(0,0,c.width,c.height);
-}
-function line(ctx, x1, y1, z1, x2, y2, z2) {
-    ctx.beginPath();
-    ctx.moveTo((x1 / z1) + 100, 100 - ((y1 / z1) + 50));
-    ctx.lineTo((x2 / z2) + 100, 100 - ((y2 / z2) + 50));
-    ctx.stroke();
+  this = c.getContext("2d");
+  this.line= function(x1, y1, z1, x2, y2, z2) {
+    this.beginPath();
+    this.moveTo((x1 / z1) + 100, 100 - ((y1 / z1) + 50));
+    this.lineTo((x2 / z2) + 100, 100 - ((y2 / z2) + 50));
+    this.stroke();
+  }
+  this.clear= function(id,ctx){
+    var c=document.getElementById(id);
+    this.fillColor="#FFFFFF";
+    this.fillRect(0,0,c.width,c.height);
+  }
 }
