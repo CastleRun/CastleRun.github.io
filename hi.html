@@ -6,8 +6,8 @@
   <body>
     <canvas id="3d" width="200" height="100">Please use a newer browser</canvas>
     <script>
-      var ctx=load("3d");
-      line(ctx,0,0,1,12,12,12);
+      var ctx=new Display("3d");
+      ctx=line(0,0,1,12,12,12);
       alert("Displayed");
     </script>
   </body>
