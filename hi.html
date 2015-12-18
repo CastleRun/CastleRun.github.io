@@ -6,9 +6,10 @@
   <body>
     <canvas id="3d" width="200" height="100">Please use a newer browser</canvas>
     <script>
-      var ctx=new Display("3d");
-      ctx=line(0,0,1,12,12,12);
-      alert("Displayed");
+      var c=document.getElementById("3d");
+      var ctx=c.getContext("2d");
+      Hiize(ctx);
+      ctx.line(0,0,1,12,12,12);
     </script>
   </body>
 </html>
