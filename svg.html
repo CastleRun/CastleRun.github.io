@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function update(box){
+        document.getElementById("image").innerHtml=box.value;
+      }
+    </script>
+  </head>
+  <body>
+    <svg id="image" width="900" height="600"></svg>
+    <textarea placeholder="Svg image here.  No svg tags needed." onKeyUp="return update(this)"></textarea>
+  </body>
+</html>
