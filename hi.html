@@ -8,14 +8,8 @@
     <script>
       var c=document.getElementById("3d");
       var ctx=c.getContext("2d");
-      Hiize(ctx,"3d");
-      ctx.x1=1;
-      ctx.y1=1;
-      ctx.z1=1;
-      ctx.x2=-1;
-      ctx.y2=1;
-      ctx.z2=1;
-      eval(ctx.line);
+      line(ctx,1,1,1,-1,1,1);
+      line(ctx,1,1,2,-1,1,2);
     </script>
   </body>
 </html>
