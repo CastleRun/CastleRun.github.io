@@ -31,14 +31,14 @@ nx1=ax1;
 ny1=0;
 }
 }
-if(!inbounds(x2,y2)){
-if(inBounds(0,ay2){
-nx2=0;
-ny2=ay2;
-}else{
-nx2=ax2;
-ny2=0;
-}
+  if(!inbounds(x2,y2)){
+    if(inBounds(0,ay2){
+      nx2=0;
+      ny2=ay2;
+    }else{
+      nx2=ax2;
+     ny2=0;
+    }
 }
 ctx.beginPath();
 ctx.moveTo(nx1,ny1);
