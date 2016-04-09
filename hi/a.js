@@ -22,7 +22,7 @@ var ay1=lb;
 var ay2=200*lm+lb;
 var ax1=(0-lb)/lm;
 var ax2=(100-lb)/lm;
-if(!inBounds(x1,y1){
+if(!inBounds(x1,y1)){
 if(inBounds(0,ay1)){
 nx1=0;
 ny1=ay1;
