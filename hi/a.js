@@ -5,7 +5,7 @@ function inBounds(x,y){
     return false
   }
 }
-function draw2dLine(x1,y1,x2,y2){
+function draw2dLine(ctx,x1,y1,x2,y2){
 if(inBounds(x1,y1),inBounds(x2,y2)){
 ctx.beginPath();
 ctx.moveTo(x1,y1);
@@ -32,7 +32,7 @@ ny1=0;
 }
 }
   if(!inbounds(x2,y2)){
-    if(inBounds(0,ay2){
+    if(inBounds(0,ay2)){
       nx2=0;
       ny2=ay2;
     }else{
@@ -47,10 +47,7 @@ ctx.stroke();
 }
 }
 function line(ctx,x1,y1,z1,x2,y2,z2){
-  ctx.beginPath();
-  ctx.moveTo((x1 / z1) + 100, 100 - ((y1 / z1) + 50));
-  ctx.lineTo((x2 / z2) + 100, 100 - ((y2 / z2) + 50));
-  ctx.stroke();
+  draw2dLine(ctx,(x1 / z1) + 100, 100 - ((y1 / z1) + 50),(x2 / z2) + 100, 100 - ((y2 / z2) + 50));
 }
 function clear(ctx){
   var c=document.getElementById(id);
