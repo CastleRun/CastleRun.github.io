@@ -6,7 +6,7 @@ function inBounds(x,y){
   }
 }
 function draw2dLine(ctx,x1,y1,x2,y2){
-if(inBounds(x1,y1),inBounds(x2,y2)){
+if(inBounds(x1,y1)&&inBounds(x2,y2)){
 ctx.beginPath();
 ctx.moveTo(x1,y1);
 ctx.lineTo(x2,y2);
