@@ -17,7 +17,7 @@ function loadDoc(fname){
   return fileObj;
 }
 
-doNothing(v){
+function doNothing(v){
   return undefined;
 }
 
@@ -42,11 +42,11 @@ function enter(text){
   box.addText(text, true);
 }
 
-function Handle(e, text){
-  if(e.keyCode=13){
-    e.preventDefault();
+function Handle(e,){
+  e.preventDefault();
+  if(e.keyCode==13){
     
-    enter(text);
+    enter(document.getElementById("input").value);
   }
   return false;
 }
