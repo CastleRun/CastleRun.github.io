@@ -44,7 +44,7 @@ function enter(text){
 
 function Handle(e, text){
   e.preventDefault();
-  if(e.keyCode===13){
+  if(e.keyCode==13){
     
     enter(text);
   }
