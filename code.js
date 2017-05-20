@@ -17,7 +17,7 @@ function loadDoc(fname){
   return fileObj;
 }
 
-doNothing(v){
+function doNothing(v){
   return undefined;
 }
 
