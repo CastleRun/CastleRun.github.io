@@ -42,11 +42,8 @@ function enter(text){
   box.addText(text, true);
 }
 
-function Handle(e,){
+function Handle(e){
   e.preventDefault();
-  if(e.keyCode==13){
-    
-    enter(document.getElementById("input").value);
-  }
+  enter(document.getElementById("input").value);
   return false;
 }
