@@ -30,6 +30,8 @@ function getFile(file){
     doNothing(err);
     x = getFile(file);
   }
+  
+  return x;
 }
 
 function start(){
