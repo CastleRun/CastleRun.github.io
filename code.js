@@ -24,7 +24,7 @@ function doNothing(v){
 function getFile(file){
   var x;
   try{
-    x = JSON.parse(getFile(file));
+    x = JSON.parse(loadDoc(file));
   }
   catch(err){
     doNothing(err);
