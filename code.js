@@ -12,7 +12,7 @@ function loadDoc(fname){
     xhttp = new ActiveXObject("Microsoft.XMLHTTP");
   }
   xhttp.onreadystatechange = function(){if(this.readyState==4&&this.status==200){fileObj=this.responseText;}else{console.log("Fail: " + this.status);}};
-  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.open("GET", fname, true);
   xhttp.send();
   return fileObj;
 }
