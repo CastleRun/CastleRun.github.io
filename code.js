@@ -11,9 +11,12 @@ function loadDoc(fname){
     //ie6 and ie5
     xhttp = new ActiveXObject("Microsoft.XMLHTTP");
   }
-  xhttp.onreadystatechange = function(){if(this.readyState==4&&this.status==200){fileObj=this.responseText;}else{console.log("Fail: " + this.status);}};
+  xhttp.onreadystatechange = function(){if(this.readyState==4&&this.status==200){fileObj=this.responseText;this["ready"]=true;}else{console.log("Fail: " + this.status);}};
   xhttp.open("GET", fname, true);
   xhttp.send();
+  while(!xhttp.ready){
+    void(0);
+  }
   return fileObj;
 }
 
