@@ -11,7 +11,7 @@ function loadDoc(fname){
     //ie6 and ie5
     xhttp = new ActiveXObject("Microsoft.XMLHTTP");
   }
-  xhttp.onreadystatechange = function(){if(this.readyState==4&&this.status==200){fileObj=this.responseText;alert("File");}else{alert("Fail");}};
+  xhttp.onreadystatechange = function(){if(this.readyState==4&&this.status==200){fileObj=this.responseText;}else{console.log("Fail: " + this.status);}};
   xhttp.open("GET", "ajax_info.txt", true);
   xhttp.send();
   return fileObj;
