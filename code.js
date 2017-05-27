@@ -28,7 +28,7 @@ function getFile(file){
   }
   catch(err){
     doNothing(err);
-    x = getFile(file);
+    x = loadDoc(file);
   }
   
   return x;
