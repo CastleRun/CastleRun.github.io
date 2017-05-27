@@ -49,6 +49,7 @@ function enter(text){
 
 function Handle(e){
   e.preventDefault();
+  console.log("Submitted");
   enter(document.getElementById("input").value);
   return false;
 }
