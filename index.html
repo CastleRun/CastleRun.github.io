@@ -8,30 +8,25 @@
       body{
         font-family:Consolas, monaco, monospace;
       }
-      #left{
-        float:left;
-        line-height: 40px;
-        width: 200px;
-        height: 500px;
-        background-color: #ffffff;
-        color:#000000;
+      #bar{
+        display:inline;
+        border-style:solid;
+        border-width:1px;
+        border-color:#000000;
       }
-      #right{
-        float:left;
-        width: 700px;
-        height: 500px;
-        background-color: #ffffff;
+      .link{
+        padding-left:0.5cm;
       }
     </style>
   </head>
   <body>
     <h1>Welcome to Castle Run</h1>
-    <div id="left">
-      <a href="javascript:document.getElementById('right').src='games/index.html'">Games</a>
-      <a href="javascript:document.getElementById('right').src='contribute.html'">Contribute</a>
-      <a href="javascript:document.getElementById('right').src='https://awwapp.com/b/uv16gz0eu/'">Whiteboard</a>
-      <a href="javascript:document.getElementById('right').src='hi.html'">Hi Test</a>
+    <div id="bar">
+      <p><strong>CastleRun</strong></p>
+      <a class="link" href="games/index.html">Games</a>
     </div>
-    <iframe id="right" src="about:blank"></iframe>
+    <div id="page">
+      <p>Welcome to the site of the worst developer in the entire world!</p>
+    </div>
   </body>
 </html>
